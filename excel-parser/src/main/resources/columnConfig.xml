@@ -1,0 +1,22 @@
+<workbook>
+  <worksheet name="Employee Info">
+ 
+    <loop startRow="1" endRow="1" items="result" var="column" varType="com.citi.grad.dao.Column">
+      <section startRow="1" endRow="1">
+        <mapping row="1" col="0">column.id</mapping>
+        <mapping row="1" col="1">column.name</mapping>
+        <mapping row="1" col="2">column.fromColumns</mapping>
+         <mapping row="1" col="3">column.toColumns</mapping>
+        <mapping row="1" col="4">column.tableId</mapping>
+        <mapping row="1" col="5">column.version</mapping>
+         <mapping row="1" col="6">column.status</mapping>
+        <mapping row="1" col="7">column.author</mapping>
+      </section>
+      <loopbreakcondition>
+        <rowcheck offset="0">
+          <cellcheck offset="0" />
+        </rowcheck>
+      </loopbreakcondition>
+    </loop>
+  </worksheet>
+</workbook>
